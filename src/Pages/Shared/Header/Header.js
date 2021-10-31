@@ -22,7 +22,7 @@ const Header = () => {
             }</Nav.Link>
             {user?.email && <NavDropdown title="admin" id="basic-nav-dropdown">
                 <NavDropdown.Item as={HashLink} to="/addService">Add Service</NavDropdown.Item>
-                <NavDropdown.Item as={HashLink} to="/manageAllService">Manage All Service</NavDropdown.Item>
+                <NavDropdown.Item as={HashLink} to="/manageAllService">Manage All Orders</NavDropdown.Item>
 
            </NavDropdown>}
             <Navbar.Text className="me-3" >
