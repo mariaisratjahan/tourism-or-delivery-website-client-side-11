@@ -10,7 +10,7 @@ const Footer = () => {
               <li><FaEnvelopeSquare/><span>Tourify</span></li>
               <li><FaLocationArrow/><span>203, Envato Labs, Behind Alis Steet, Melbourne, Australia</span></li>
           </div>
-          <small className="footer-para text-center">© 2021 <span className="text-danger px-2">RUNNER'S LIFE</span>.with all rights reserved</small>
+          <small className="footer-para text-center">© 2021 <span className="text-danger px-2">Tourify</span>.with all rights reserved</small>
         </div>
     );
 };
