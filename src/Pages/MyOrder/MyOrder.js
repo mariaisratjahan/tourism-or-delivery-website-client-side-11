@@ -54,7 +54,8 @@ const MyOrder = () => {
                         </Card.Body>
                    </Card>
                     </Col>
-                    <Col md={2}><button onClick={()=>handleDelBtn(order?._id)} className="btn btn-danger m-5">Delete</button></Col>
+                    <Col md={2}><button onClick={()=>handleDelBtn(order?._id)} className="btn btn-danger m-5">Delete</button>
+                    <button  className="btn btn-primary">{order?.status}</button></Col>
                     <hr />
                 </Row>)
                
