@@ -23,7 +23,7 @@ const PlaceOrder = () => {
           data.email=sEmail;
           console.log(data);
           console.log(data);
-          fetch('http://localhost:5000/bookingService',{
+          fetch('https://shrieking-catacombs-12008.herokuapp.com/bookingService',{
               method:"POST",
               headers:{
                   "content-type":"application/json"
@@ -40,7 +40,7 @@ const PlaceOrder = () => {
     };
     console.log(id);
     useEffect(()=>{
-        fetch(`http://localhost:5000/singleService/${id}`)
+        fetch(`https://shrieking-catacombs-12008.herokuapp.com/singleService/${id}`)
         .then(res => res.json())
         .then(data=>{
             setService(data);

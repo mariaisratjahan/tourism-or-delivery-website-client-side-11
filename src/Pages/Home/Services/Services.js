@@ -10,7 +10,7 @@ const Services = () => {
     const [services,setServices]=useState([]);
     const{user}=useAuth();
     useEffect(()=>{
-        fetch('http://localhost:5000/services')
+        fetch('https://shrieking-catacombs-12008.herokuapp.com/services')
         .then(res => res.json())
         .then(data =>{
             setServices(data)
@@ -24,7 +24,7 @@ const Services = () => {
         const email=user.email;
         data.email=email;
         console.log(data);
-        fetch('http://localhost:5000/bookingService',{
+        fetch('https://shrieking-catacombs-12008.herokuapp.com/bookingService',{
             method:"POST",
             headers:{
              "content-type":"application/json"

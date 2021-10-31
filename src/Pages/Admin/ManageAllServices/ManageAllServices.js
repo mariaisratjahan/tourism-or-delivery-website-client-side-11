@@ -4,7 +4,7 @@ import { Card, Col, Container, Row } from 'react-bootstrap';
 const ManageAllServices = () => {
     const [allOrders,setAllOrders]=useState([]);
     useEffect(()=>{
-        fetch("http://localhost:5000/allOrders")
+        fetch("https://shrieking-catacombs-12008.herokuapp.com/allOrders")
         .then(res => res.json())
         .then(data=>{
             setAllOrders(data);
@@ -16,7 +16,7 @@ const ManageAllServices = () => {
         if(proceed){
             console.log(allOrders);
         console.log(id);
-        fetch(`http://localhost:5000/orderDelete/${id}`,{
+        fetch(`https://shrieking-catacombs-12008.herokuapp.com/orderDelete/${id}`,{
             method:"DELETE",
             headers:{
                 "content-type":"application/json"
