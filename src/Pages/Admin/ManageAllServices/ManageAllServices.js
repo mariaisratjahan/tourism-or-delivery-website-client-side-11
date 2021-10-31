@@ -45,7 +45,8 @@ const ManageAllServices = () => {
                     <Col md={2}>{order?.username}</Col>
                     
                     <Col md={4}>
-                    <Card style={{ width: '18rem',padding:"10px",margin:"10px" }}>
+                    <Card >
+                    <Card.Img variant="top" src={order?.img}/>
                         <Card.Body>
                             <Card.Title>{order?.name}</Card.Title>
                             <Card.Text >Price ${order?.price}</Card.Text>
@@ -54,8 +55,8 @@ const ManageAllServices = () => {
                    </Card>
                     </Col>
                     <Col md={2} className="d-md-flex justify-content-center ">
-                    <button  className="btn btn-warning me-3">{order?.status}</button>
-                    <button onClick={()=>handleDelBtn(order?._id)}  className="btn btn-danger">Delete</button></Col>
+                    <button  className="btn btn-warning m-3">{order?.status}</button>
+                    <button onClick={()=>handleDelBtn(order?._id)}  className="btn btn-danger m-3">Delete</button></Col>
                     <hr />
                 </Row>
                 </Container>)

@@ -17,10 +17,12 @@ const PlaceOrder = () => {
           const sPrice=service.cost;
           const status="pending"
           const sEmail=user.email;
+          const sImg=service.img;
           data.name=sName;
           data.price=sPrice;
           data.status=status;
           data.email=sEmail;
+          data.img=sImg;
           console.log(data);
           console.log(data);
           fetch('https://shrieking-catacombs-12008.herokuapp.com/bookingService',{
@@ -72,7 +74,7 @@ const PlaceOrder = () => {
                  </form>
                  </div>
                  <div className="card-container">                  
-                 <Card style={{ width: '30rem' }}>
+                 <Card >
                     <Card.Img variant="top" src={service?.img} />
                     <Card.Body>
                         <Card.Title>{service?.name}</Card.Title>

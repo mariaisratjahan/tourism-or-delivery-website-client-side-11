@@ -45,7 +45,8 @@ const MyOrder = () => {
                     <Col md={2}>{order?.username}</Col>
                     <Col md={1}>{order?.gender}</Col>
                     <Col md={3} className="m-3">
-                    <Card style={{ width: '18rem',padding:"10px",margin:"10px" }}>
+                    <Card style={{ padding:"10px",margin:"10px" }}>
+                    <Card.Img variant="top" src={order?.img}/>
                         <Card.Body>
                             <Card.Title>{order?.name}</Card.Title>
                             <Card.Text >Price ${order?.price}</Card.Text>

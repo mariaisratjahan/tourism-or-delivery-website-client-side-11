@@ -1,5 +1,6 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
+import './AddService.css'
 const AddService = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
     const onSubmit = data => {
@@ -24,7 +25,7 @@ const AddService = () => {
         <div>
             <h2>Add new service</h2>
             <div>
-                <form onSubmit={handleSubmit(onSubmit)}>
+                <form onSubmit={handleSubmit(onSubmit)} className="form-container">
                     {/* register your input into the hook by invoking the "register" function */}
                     <input {...register("img")} placeholder="Image link" /> <br /> <br />
                     <input {...register("name")} placeholder="Destination name" /> <br /> <br />
@@ -33,7 +34,7 @@ const AddService = () => {
                     <input type="number" {...register("days")} placeholder="Days"/>    <br />            
                     
              <br />
-                    <input type="submit" className="btn btn-primary" />
+                    <input type="submit" className="btn btn-primary rounded" />
                </form>
             </div>
         </div>
