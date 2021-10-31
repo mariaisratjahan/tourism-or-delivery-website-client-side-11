@@ -1,0 +1,33 @@
+.icons{
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    color:rgb(240, 237, 234);
+    font-size: 30px;
+    margin-bottom: 20px;
+    
+}
+.icons li{
+    margin-left: 25px;
+    padding:10px;
+    border-right:1px solid rgb(228, 228, 219) ;
+    border-left: 1px solid rgb(238, 236, 228);
+    cursor: pointer;
+}
+.icons li span{
+    font-size: 15px;
+    color:white;
+    margin-left: 10px;
+}
+.footer{
+    padding:30px;
+}
+.footer-heading{
+    color:rgb(238, 237, 236);
+    font-size: 25px;
+    padding-bottom: 3px;
+}
+.footer-para{
+    color:white;
+    padding: 25px;
+}

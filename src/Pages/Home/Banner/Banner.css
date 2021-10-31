@@ -1,0 +1,32 @@
+.common-color{
+    font-size: 60px;
+    color: rgb(211, 135, 73);
+}
+.banner{
+    background: linear-gradient(to bottom left, rgba(247, 248, 246, 0.205) 50%, rgba(245, 241, 201, 0.767) 50%);
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-text{
+    
+    text-align: center;
+    line-height: 0.2;
+  
+}
+.first{
+    
+    font-size: 50px;
+    font-weight: 700;
+}
+.second{
+    font-size: 30px;
+    font-weight:lighter;
+    color: rgb(10, 10, 10);
+}
+
+.banner img{
+   
+    width:300px;
+    height:400px;
+}
