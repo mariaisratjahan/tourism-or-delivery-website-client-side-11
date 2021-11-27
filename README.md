@@ -4,10 +4,8 @@ tourism websites influence tourists' perceptions and impressions, which signific
 # live link: https://tour-booking-site.web.app/
 
 
-.User-friendly navigation structure, with clear and
-.consistent page layout.
-.Stunning visuals, including images and video.
-.Compelling, well-written content.
-.Clean, contemporary web design scheme that reinforces brand identity.
-.Search-engine-friendly website construction.
+● User-friendly navigation structure
+● A Tour booking website 
+● Implemented login system. Users can perform CURD operations here.
+● Utilized MERN, Javascript, Bootstrap, React Bootstrap, Firebase Authentication, Heroku
 
